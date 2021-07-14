@@ -25,21 +25,7 @@ class AirtistViewController: UIViewController {
         airtistCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         airtistCollectionView.delegate = self
         airtistCollectionView.dataSource = self
-
-        //setupFlowLayout()
     }
-    
-//    private func setupFlowLayout() {
-//        let flowLayout = UICollectionViewFlowLayout()
-//        flowLayout.sectionInset = UIEdgeInsets(top: 30, left: 30, bottom: 0, right: 30)
-//        flowLayout.minimumInteritemSpacing = 30
-//        flowLayout.minimumLineSpacing = 20
-//
-//        let halfWidth = UIScreen.main.bounds.width / 3 - flowLayout.minimumInteritemSpacing
-//        print("halfWidth", UIScreen.main.bounds.width )
-//        flowLayout.itemSize = CGSize(width: halfWidth - 20, height: halfWidth)
-//        self.airtistCollectionView.collectionViewLayout = flowLayout
-//    }
 }
 
 extension AirtistViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -56,6 +42,10 @@ extension AirtistViewController: UICollectionViewDelegate, UICollectionViewDataS
         let cell = airtistCollectionView.dequeueReusableCell(withReuseIdentifier: "AirtistCollectionViewCell", for: indexPath) as! AirtistCollectionViewCell
         cell.airtistImageView.layer.cornerRadius = 10
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toDetail", sender: indexPath)
     }
     
 }
@@ -80,10 +70,7 @@ extension AirtistViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width = collectionView.frame.width / 3 - AirtistSpacing.inest
-        let size = CGSize(width: width - 20, height: width - 20)
+        let size = CGSize(width: width - AirtistSpacing.inest / 2, height: width - AirtistSpacing.inest / 2)
         return size
     }
-    
 }
-
-

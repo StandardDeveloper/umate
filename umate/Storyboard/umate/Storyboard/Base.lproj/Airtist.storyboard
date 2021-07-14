@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t1D-v0-d8L">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Airtist View Controller-->
+        <scene sceneID="cmZ-n6-KOM">
+            <objects>
+                <viewController id="1SK-gw-7r3" customClass="AirtistViewController" customModule="umate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CBv-iN-c15">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eVa-h0-2Gx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JAR-64-SbJ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y8e-it-yDg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eVa-h0-2Gx" firstAttribute="top" secondItem="Y8e-it-yDg" secondAttribute="top" id="c1K-75-Bch"/>
+                            <constraint firstItem="Y8e-it-yDg" firstAttribute="trailing" secondItem="eVa-h0-2Gx" secondAttribute="trailing" id="sBM-b5-3sY"/>
+                            <constraint firstItem="Y8e-it-yDg" firstAttribute="bottom" secondItem="eVa-h0-2Gx" secondAttribute="bottom" id="sWj-Rx-UVE"/>
+                            <constraint firstItem="eVa-h0-2Gx" firstAttribute="leading" secondItem="Y8e-it-yDg" secondAttribute="leading" id="wZ6-CH-mxy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5dU-wD-2On"/>
+                    <connections>
+                        <outlet property="airtistCollectionView" destination="eVa-h0-2Gx" id="Pbt-YY-2q3"/>
+                        <segue destination="JmD-Mu-qi7" kind="show" identifier="toDetail" id="xN4-Dv-pIs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Os-XO-XFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4568.115942028986" y="71.651785714285708"/>
+        </scene>
+        <!--Airtist Main View Controller-->
+        <scene sceneID="YMQ-tr-boR">
+            <objects>
+                <viewController id="JmD-Mu-qi7" customClass="AirtistMainViewController" customModule="umate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P5X-B3-bIp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h2h-dk-yl9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YIq-Q3-1ce"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzo-9v-ukC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3658" y="796"/>
+        </scene>
+        <!--Airtist Tunes View Controller-->
+        <scene sceneID="4ig-of-pTm">
+            <objects>
+                <viewController storyboardIdentifier="AirtistTunesViewController" id="TfI-eE-EjL" customClass="AirtistTunesViewController" customModule="umate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vk5-4m-htd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f4" translatesAutoresizingMaskIntoConstraints="NO" id="1Vz-nt-IGp">
+                                <rect key="frame" x="20" y="44" width="374" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="bfj-Jx-ZaR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3인조 혼성 밴드 이븐이프 입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSU-cq-Dwa">
+                                <rect key="frame" x="80" y="56" width="324" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="V4L-hE-Smo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L8R-g2-Cgb">
+                                <rect key="frame" x="0.0" y="414" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t2J-vm-0rd">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evenlf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-LJ-AcB">
+                                <rect key="frame" x="40" y="334" width="101" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.92549019610000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IRA-DR-Ycb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Vz-nt-IGp" firstAttribute="leading" secondItem="IRA-DR-Ycb" secondAttribute="leading" constant="20" id="1Kt-YS-Zul"/>
+                            <constraint firstItem="IRA-DR-Ycb" firstAttribute="trailing" secondItem="L8R-g2-Cgb" secondAttribute="trailing" id="1eM-An-Sb8"/>
+                            <constraint firstItem="IRA-DR-Ycb" firstAttribute="trailing" secondItem="1Vz-nt-IGp" secondAttribute="trailing" constant="20" id="5Px-xX-aqi"/>
+                            <constraint firstItem="QXX-LJ-AcB" firstAttribute="top" secondItem="1Vz-nt-IGp" secondAttribute="bottom" constant="-60" id="5g2-8m-PeC"/>
+                            <constraint firstItem="IRA-DR-Ycb" firstAttribute="bottom" secondItem="L8R-g2-Cgb" secondAttribute="bottom" id="8pL-cr-QWL"/>
+                            <constraint firstItem="BSU-cq-Dwa" firstAttribute="leading" secondItem="IRA-DR-Ycb" secondAttribute="leading" constant="80" id="Eia-vG-gUH"/>
+                            <constraint firstItem="QXX-LJ-AcB" firstAttribute="leading" secondItem="IRA-DR-Ycb" secondAttribute="leading" constant="40" id="VUC-4j-a6x"/>
+                            <constraint firstItem="L8R-g2-Cgb" firstAttribute="top" secondItem="1Vz-nt-IGp" secondAttribute="bottom" constant="20" id="VfY-CE-U1c"/>
+                            <constraint firstItem="L8R-g2-Cgb" firstAttribute="leading" secondItem="IRA-DR-Ycb" secondAttribute="leading" id="Z3c-PX-x0Q"/>
+                            <constraint firstItem="BSU-cq-Dwa" firstAttribute="top" secondItem="IRA-DR-Ycb" secondAttribute="top" constant="12" id="j5i-GM-2lD"/>
+                            <constraint firstItem="IRA-DR-Ycb" firstAttribute="trailing" secondItem="BSU-cq-Dwa" secondAttribute="trailing" constant="10" id="pVc-dg-ZF8"/>
+                            <constraint firstItem="1Vz-nt-IGp" firstAttribute="top" secondItem="IRA-DR-Ycb" secondAttribute="top" id="szw-CP-kij"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AirtistTunesCollectionView" destination="L8R-g2-Cgb" id="fvG-6A-Rjo"/>
+                        <outlet property="airtistTunesImageView" destination="1Vz-nt-IGp" id="cZT-Yr-Cq5"/>
+                        <outlet property="infoLabel" destination="BSU-cq-Dwa" id="DA3-1o-IjN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkf-th-Lhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4557.971014492754" y="788.83928571428567"/>
+        </scene>
+        <!--Airtist Added View Controller-->
+        <scene sceneID="izz-D5-PZf">
+            <objects>
+                <viewController storyboardIdentifier="AirtistAddedViewController" id="K9t-Fx-mJw" customClass="AirtistAddedViewController" customModule="umate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmD-f6-42z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7JX-bk-eBK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5RK-X9-Iuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5371" y="789"/>
+        </scene>
+        <!--Airtist Added By View Controller-->
+        <scene sceneID="cqB-nk-e0V">
+            <objects>
+                <viewController storyboardIdentifier="AirtistAddedByViewController" id="N1x-s9-IAc" customClass="AirtistAddedByViewController" customModule="umate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZxR-h7-ifw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tYe-s3-Z8M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roz-mr-adk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6152" y="789"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pMR-2y-mnC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t1D-v0-d8L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="camera" catalog="system" id="Dnl-Pp-cks"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gqu-NM-95v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1SK-gw-7r3" kind="relationship" relationship="rootViewController" id="JUd-cv-8ck"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmT-wB-ee8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3657.971014492754" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="f4" width="1242" height="1242"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -38,9 +38,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOj-0W-y80">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOj-0W-y80">
                                 <rect key="frame" x="0.0" y="26" width="134" height="336"/>
-                                <mutableString key="text">문득 떠오른 기억에 잠 못 드는
+                                <string key="text">문득 떠오른 기억에 잠 못 드는
 나의 마음을 넌 모르니
 지나버린 그 추억은 왜 그런지
 가슴에 여전히 사나봐
@@ -83,7 +83,7 @@
 하루 또 하루가
 내게는 영원이란 시간인가 봐
 그래도 난 너를 기다려 사랑해
-가슴 깊이 네게 하는 말 사랑해</mutableString>
+가슴 깊이 네게 하는 말 사랑해</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -92,6 +92,7 @@
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lc-6T-O6w">
                         <rect key="frame" x="20" y="14" width="12.5" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <color key="tintColor" white="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" image="chevron.backward" catalog="system"/>
                         <connections>

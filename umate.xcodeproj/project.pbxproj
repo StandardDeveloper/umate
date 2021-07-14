@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D90795DC8E39656E411702A /* Pods_umate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B74D1B4D190E42874E19F3 /* Pods_umate.framework */; };
 		D2416340269C5A49009BDF82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D241633F269C5A49009BDF82 /* AppDelegate.swift */; };
 		D2416342269C5A49009BDF82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2416341269C5A49009BDF82 /* SceneDelegate.swift */; };
 		D2416347269C5A49009BDF82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2416345269C5A49009BDF82 /* Main.storyboard */; };
@@ -19,12 +20,19 @@
 		D2C01BF0269F20AD00FB7138 /* Airtist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C01BEE269F20AD00FB7138 /* Airtist.storyboard */; };
 		D2C01BF3269F219400FB7138 /* AirtistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C01BF1269F219400FB7138 /* AirtistCollectionViewCell.swift */; };
 		D2C01BF4269F219400FB7138 /* AirtistCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C01BF2269F219400FB7138 /* AirtistCollectionViewCell.xib */; };
+		D2D0B21A269F3BB300ACDCAE /* AirtistMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0B219269F3BB300ACDCAE /* AirtistMainViewController.swift */; };
+		D2D0B21C269F3BCF00ACDCAE /* AirtistTunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0B21B269F3BCF00ACDCAE /* AirtistTunesViewController.swift */; };
+		D2D0B21E269F3BDC00ACDCAE /* AirtistAddedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0B21D269F3BDC00ACDCAE /* AirtistAddedViewController.swift */; };
+		D2D0B220269F3BEB00ACDCAE /* AirtistAddedByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0B21F269F3BEB00ACDCAE /* AirtistAddedByViewController.swift */; };
 		D2FC590D269C60C3005D3098 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC590C269C60C3005D3098 /* HomeViewController.swift */; };
 		D2FC5911269C6388005D3098 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC590F269C6388005D3098 /* HomeCollectionViewCell.swift */; };
 		D2FC5912269C6388005D3098 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FC5910269C6388005D3098 /* HomeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76B74D1B4D190E42874E19F3 /* Pods_umate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_umate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2777DBBDC2DF0C8EBD71EB1 /* Pods-umate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-umate.release.xcconfig"; path = "Target Support Files/Pods-umate/Pods-umate.release.xcconfig"; sourceTree = "<group>"; };
+		B5B20FDC42C47F687E7B1632 /* Pods-umate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-umate.debug.xcconfig"; path = "Target Support Files/Pods-umate/Pods-umate.debug.xcconfig"; sourceTree = "<group>"; };
 		D241633C269C5A49009BDF82 /* umate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = umate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D241633F269C5A49009BDF82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2416341269C5A49009BDF82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,10 @@
 		D2C01BEF269F20AD00FB7138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = umate/Storyboard/Base.lproj/Airtist.storyboard; sourceTree = "<group>"; };
 		D2C01BF1269F219400FB7138 /* AirtistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtistCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2C01BF2269F219400FB7138 /* AirtistCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirtistCollectionViewCell.xib; sourceTree = "<group>"; };
+		D2D0B219269F3BB300ACDCAE /* AirtistMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtistMainViewController.swift; sourceTree = "<group>"; };
+		D2D0B21B269F3BCF00ACDCAE /* AirtistTunesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtistTunesViewController.swift; sourceTree = "<group>"; };
+		D2D0B21D269F3BDC00ACDCAE /* AirtistAddedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtistAddedViewController.swift; sourceTree = "<group>"; };
+		D2D0B21F269F3BEB00ACDCAE /* AirtistAddedByViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtistAddedByViewController.swift; sourceTree = "<group>"; };
 		D2FC590C269C60C3005D3098 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D2FC590F269C6388005D3098 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2FC5910269C6388005D3098 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -49,18 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D90795DC8E39656E411702A /* Pods_umate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EE5BE1514C114A6B5877C1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76B74D1B4D190E42874E19F3 /* Pods_umate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2416333269C5A49009BDF82 = {
 			isa = PBXGroup;
 			children = (
-				D2C01BEE269F20AD00FB7138 /* Airtist.storyboard */,
 				D241633E269C5A49009BDF82 /* umate */,
 				D241633D269C5A49009BDF82 /* Products */,
+				F210550BE47F3A1D7A39F3A7 /* Pods */,
+				0EE5BE1514C114A6B5877C1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +119,31 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		D2D0B217269F3B5B00ACDCAE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2FC590C269C60C3005D3098 /* HomeViewController.swift */,
+				D2C01BE1269D83EB00FB7138 /* DetailViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D2D0B218269F3B6900ACDCAE /* Airtist */ = {
+			isa = PBXGroup;
+			children = (
+				D2C01BEC269F200F00FB7138 /* AirtistViewController.swift */,
+				D2D0B219269F3BB300ACDCAE /* AirtistMainViewController.swift */,
+				D2D0B21B269F3BCF00ACDCAE /* AirtistTunesViewController.swift */,
+				D2D0B21D269F3BDC00ACDCAE /* AirtistAddedViewController.swift */,
+				D2D0B21F269F3BEB00ACDCAE /* AirtistAddedByViewController.swift */,
+			);
+			path = Airtist;
+			sourceTree = "<group>";
+		};
 		D2FC590A269C6088005D3098 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				D2C01BEE269F20AD00FB7138 /* Airtist.storyboard */,
 				D2416345269C5A49009BDF82 /* Main.storyboard */,
 			);
 			path = Storyboard;
@@ -108,9 +152,8 @@
 		D2FC590B269C60AA005D3098 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D2FC590C269C60C3005D3098 /* HomeViewController.swift */,
-				D2C01BE1269D83EB00FB7138 /* DetailViewController.swift */,
-				D2C01BEC269F200F00FB7138 /* AirtistViewController.swift */,
+				D2D0B217269F3B5B00ACDCAE /* Home */,
+				D2D0B218269F3B6900ACDCAE /* Airtist */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -126,6 +169,15 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		F210550BE47F3A1D7A39F3A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5B20FDC42C47F687E7B1632 /* Pods-umate.debug.xcconfig */,
+				A2777DBBDC2DF0C8EBD71EB1 /* Pods-umate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2416350269C5A4A009BDF82 /* Build configuration list for PBXNativeTarget "umate" */;
 			buildPhases = (
+				E517637767960B5FF1A90D3D /* [CP] Check Pods Manifest.lock */,
 				D2416338269C5A49009BDF82 /* Sources */,
 				D2416339269C5A49009BDF82 /* Frameworks */,
 				D241633A269C5A49009BDF82 /* Resources */,
+				69035930E52B81D7088D3046 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +249,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69035930E52B81D7088D3046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-umate/Pods-umate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-umate/Pods-umate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-umate/Pods-umate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E517637767960B5FF1A90D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-umate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2416338269C5A49009BDF82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,6 +299,10 @@
 				D2C01BED269F200F00FB7138 /* AirtistViewController.swift in Sources */,
 				D2C01BF3269F219400FB7138 /* AirtistCollectionViewCell.swift in Sources */,
 				D2C01BEA269D912F00FB7138 /* DetailTableViewCell.swift in Sources */,
+				D2D0B21E269F3BDC00ACDCAE /* AirtistAddedViewController.swift in Sources */,
+				D2D0B220269F3BEB00ACDCAE /* AirtistAddedByViewController.swift in Sources */,
+				D2D0B21A269F3BB300ACDCAE /* AirtistMainViewController.swift in Sources */,
+				D2D0B21C269F3BCF00ACDCAE /* AirtistTunesViewController.swift in Sources */,
 				D2416340269C5A49009BDF82 /* AppDelegate.swift in Sources */,
 				D2416342269C5A49009BDF82 /* SceneDelegate.swift in Sources */,
 				D2C01BE2269D83EB00FB7138 /* DetailViewController.swift in Sources */,
@@ -359,6 +459,7 @@
 		};
 		D2416351269C5A4A009BDF82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B20FDC42C47F687E7B1632 /* Pods-umate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,6 +478,7 @@
 		};
 		D2416352269C5A4A009BDF82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2777DBBDC2DF0C8EBD71EB1 /* Pods-umate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

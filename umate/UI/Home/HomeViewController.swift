@@ -64,10 +64,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         paragraph.firstLineHeadIndent = 15
         let attrnameLabel = NSAttributedString(string: "name", attributes: [.paragraphStyle : paragraph])
         cell.nameLabel.attributedText = attrnameLabel
-        cell.nameLabel.backgroundColor = UIColor(red: 102/255, green: 102/255, blue: 102/255, alpha: 0.7)
+        cell.nameLabel.backgroundColor = UIColor(red: 93/255, green: 93/255, blue: 93/255, alpha: 0.8)
         cell.nameLabel.layer.cornerRadius = 2
         cell.nameLabel.layer.masksToBounds = true
-        cell.nameLabel.textColor = UIColor(red: 102/255, green: 102/255, blue: 102/255, alpha: 1)
+        cell.nameLabel.textColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
         
         cell.collectionImageView.layer.cornerRadius = 10
         
