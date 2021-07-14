@@ -27,8 +27,6 @@ class DetailTableViewCell: UITableViewCell {
     @IBAction func backBtn(_ sender: Any) {
         
         delegate?.moveBackBtn(flag: true)
-        print("button")
-        
     }
     
 }

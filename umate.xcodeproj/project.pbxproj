@@ -15,6 +15,10 @@
 		D2C01BE2269D83EB00FB7138 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C01BE1269D83EB00FB7138 /* DetailViewController.swift */; };
 		D2C01BEA269D912F00FB7138 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C01BE8269D912F00FB7138 /* DetailTableViewCell.swift */; };
 		D2C01BEB269D912F00FB7138 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C01BE9269D912F00FB7138 /* DetailTableViewCell.xib */; };
+		D2C01BED269F200F00FB7138 /* AirtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C01BEC269F200F00FB7138 /* AirtistViewController.swift */; };
+		D2C01BF0269F20AD00FB7138 /* Airtist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C01BEE269F20AD00FB7138 /* Airtist.storyboard */; };
+		D2C01BF3269F219400FB7138 /* AirtistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C01BF1269F219400FB7138 /* AirtistCollectionViewCell.swift */; };
+		D2C01BF4269F219400FB7138 /* AirtistCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C01BF2269F219400FB7138 /* AirtistCollectionViewCell.xib */; };
 		D2FC590D269C60C3005D3098 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC590C269C60C3005D3098 /* HomeViewController.swift */; };
 		D2FC5911269C6388005D3098 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC590F269C6388005D3098 /* HomeCollectionViewCell.swift */; };
 		D2FC5912269C6388005D3098 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FC5910269C6388005D3098 /* HomeCollectionViewCell.xib */; };
@@ -31,6 +35,10 @@
 		D2C01BE1269D83EB00FB7138 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D2C01BE8269D912F00FB7138 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		D2C01BE9269D912F00FB7138 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		D2C01BEC269F200F00FB7138 /* AirtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtistViewController.swift; sourceTree = "<group>"; };
+		D2C01BEF269F20AD00FB7138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = umate/Storyboard/Base.lproj/Airtist.storyboard; sourceTree = "<group>"; };
+		D2C01BF1269F219400FB7138 /* AirtistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtistCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2C01BF2269F219400FB7138 /* AirtistCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirtistCollectionViewCell.xib; sourceTree = "<group>"; };
 		D2FC590C269C60C3005D3098 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D2FC590F269C6388005D3098 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2FC5910269C6388005D3098 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -50,6 +58,7 @@
 		D2416333269C5A49009BDF82 = {
 			isa = PBXGroup;
 			children = (
+				D2C01BEE269F20AD00FB7138 /* Airtist.storyboard */,
 				D241633E269C5A49009BDF82 /* umate */,
 				D241633D269C5A49009BDF82 /* Products */,
 			);
@@ -101,6 +110,7 @@
 			children = (
 				D2FC590C269C60C3005D3098 /* HomeViewController.swift */,
 				D2C01BE1269D83EB00FB7138 /* DetailViewController.swift */,
+				D2C01BEC269F200F00FB7138 /* AirtistViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -110,6 +120,8 @@
 			children = (
 				D2FC590F269C6388005D3098 /* HomeCollectionViewCell.swift */,
 				D2FC5910269C6388005D3098 /* HomeCollectionViewCell.xib */,
+				D2C01BF1269F219400FB7138 /* AirtistCollectionViewCell.swift */,
+				D2C01BF2269F219400FB7138 /* AirtistCollectionViewCell.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -172,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D241634C269C5A4A009BDF82 /* LaunchScreen.storyboard in Resources */,
+				D2C01BF4269F219400FB7138 /* AirtistCollectionViewCell.xib in Resources */,
+				D2C01BF0269F20AD00FB7138 /* Airtist.storyboard in Resources */,
 				D2C01BEB269D912F00FB7138 /* DetailTableViewCell.xib in Resources */,
 				D2416349269C5A4A009BDF82 /* Assets.xcassets in Resources */,
 				D2416347269C5A49009BDF82 /* Main.storyboard in Resources */,
@@ -186,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C01BED269F200F00FB7138 /* AirtistViewController.swift in Sources */,
+				D2C01BF3269F219400FB7138 /* AirtistCollectionViewCell.swift in Sources */,
 				D2C01BEA269D912F00FB7138 /* DetailTableViewCell.swift in Sources */,
 				D2416340269C5A49009BDF82 /* AppDelegate.swift in Sources */,
 				D2416342269C5A49009BDF82 /* SceneDelegate.swift in Sources */,
@@ -212,6 +228,14 @@
 				D241634B269C5A4A009BDF82 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2C01BEE269F20AD00FB7138 /* Airtist.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C01BEF269F20AD00FB7138 /* Base */,
+			);
+			name = Airtist.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
