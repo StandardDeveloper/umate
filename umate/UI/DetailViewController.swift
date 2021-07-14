@@ -42,6 +42,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource, Deta
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = detailTableView.dequeueReusableCell(withIdentifier: "DetailTableViewCell", for: indexPath) as! DetailTableViewCell
+        cell.delegate = self
         return cell
     }
     
@@ -50,10 +51,5 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource, Deta
         if flag  {
             navigationController?.popViewController(animated: true)
         }
-        
-        
     }
-    
-    
-    
 }

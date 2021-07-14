@@ -78,6 +78,22 @@
             </objects>
             <point key="canvasLocation" x="2792.753623188406" y="75"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="cmZ-n6-KOM">
+            <objects>
+                <viewController id="1SK-gw-7r3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CBv-iN-c15">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Y8e-it-yDg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="camera" catalog="system" id="Dnl-Pp-cks"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Os-XO-XFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3658" y="72"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0tr-kf-3bj">
             <objects>
@@ -91,6 +107,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="OhI-t6-zsj" kind="relationship" relationship="viewControllers" id="g0b-C9-JNt"/>
+                        <segue destination="1SK-gw-7r3" kind="relationship" relationship="viewControllers" id="9gb-63-WRr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iB-QR-xNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -118,6 +135,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
