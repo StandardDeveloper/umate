@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DetailTableViewCell" id="KGk-i7-Jjw" customClass="DetailTableViewCell" customModule="umate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1" translatesAutoresizingMaskIntoConstraints="NO" id="ASU-3L-AOt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="400" id="uQk-um-rjR"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f4" translatesAutoresizingMaskIntoConstraints="NO" id="fdX-Hz-ahZ">
+                        <rect key="frame" x="172" y="444" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="2R7-bS-C1D"/>
+                            <constraint firstAttribute="width" constant="70" id="e2Y-t6-14K"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iGm-3o-CrP">
+                        <rect key="frame" x="140" y="524" width="134" height="362"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Flower Garden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIe-ba-T1y">
+                                <rect key="frame" x="0.0" y="0.0" width="134" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOj-0W-y80">
+                                <rect key="frame" x="0.0" y="26" width="134" height="336"/>
+                                <mutableString key="text">문득 떠오른 기억에 잠 못 드는
+나의 마음을 넌 모르니
+지나버린 그 추억은 왜 그런지
+가슴에 여전히 사나봐
+살다가 내 생각이 날 때면
+그땐 언제든 찾아와줘
+내 사랑 너이니까
+난 여기에 서 있을게
+난 너를 사랑해
+내린 빗방울 수보다 사랑해
+계절이 몇 번을 변한대도
+난 항상 이 자리에 서 있을게
+난 네가 필요해
+내가 숨 쉴 수 있는 유일한 사람
+내가 사랑할 사람은 너 뿐이야
+아직 못 다한 말들이 있다는 걸
+너는 혹시 느낄 수 있니
+두 눈 가득 고인 눈물이 흘러도
+한 번쯤 모른 척 해 줄래
+가슴에 좋았던 추억들이
+나를 살아가게 하나봐
+눈감아 그려보면
+네가 올 것만 같은데
+난 너를 사랑해
+내린 빗방울 수보다 사랑해
+계절이 몇 번을 변한대도
+난 항상 이 자리에 서 있을게
+난 네가 필요해
+내가 숨 쉴 수 있는 유일한 사람
+내가 사랑할 사람은 너 뿐이야
+두 눈이 참 예뻤던 널
+날 보면 늘 안아주던 널
+세상 어디라 해도 찾아갈게
+조금만 기다려줘
+난 너를 사랑해
+난 너를 사랑해
+내린 빗방울 수보다 사랑해
+(My everything)
+계절이 몇 번을 변한대도
+난 항상 이 자리에 서 있을게
+하루 또 하루가
+내게는 영원이란 시간인가 봐
+그래도 난 너를 기다려 사랑해
+가슴 깊이 네게 하는 말 사랑해</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lc-6T-O6w">
+                        <rect key="frame" x="20" y="14" width="12.5" height="22"/>
+                        <color key="tintColor" white="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="chevron.backward" catalog="system"/>
+                        <connections>
+                            <action selector="backBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xk3-hZ-sam"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iGm-3o-CrP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="140" id="2P1-e7-sUd"/>
+                    <constraint firstItem="fdX-Hz-ahZ" firstAttribute="top" secondItem="ASU-3L-AOt" secondAttribute="bottom" constant="44" id="9JR-1B-ekh"/>
+                    <constraint firstItem="ASU-3L-AOt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ISI-Cz-G4g"/>
+                    <constraint firstAttribute="bottom" secondItem="iGm-3o-CrP" secondAttribute="bottom" constant="10" id="PAc-N2-StS"/>
+                    <constraint firstAttribute="trailing" secondItem="iGm-3o-CrP" secondAttribute="trailing" constant="140" id="Wku-tR-raZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ASU-3L-AOt" secondAttribute="trailing" id="aU8-zB-032"/>
+                    <constraint firstItem="ASU-3L-AOt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jYi-9Y-UrP"/>
+                    <constraint firstItem="iGm-3o-CrP" firstAttribute="top" secondItem="fdX-Hz-ahZ" secondAttribute="bottom" constant="10" id="rOr-CX-D1o"/>
+                    <constraint firstItem="fdX-Hz-ahZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ynP-8V-6ug"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="8lc-6T-O6w" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="14" id="0T6-gv-omR"/>
+                <constraint firstItem="8lc-6T-O6w" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="20" id="B4E-uz-2MG"/>
+            </constraints>
+            <point key="canvasLocation" x="105.79710144927537" y="51.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="f1" width="1242" height="1242"/>
+        <image name="f4" width="1242" height="1242"/>
+    </resources>
+</document>
