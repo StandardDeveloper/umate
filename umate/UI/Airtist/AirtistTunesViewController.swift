@@ -62,12 +62,12 @@ extension AirtistTunesViewController: UICollectionViewDelegate, UICollectionView
     }
 }
 
-var airtistTunesSpacing: CollectionViewSpacing = CollectionViewSpacing(lineSpacing: 0, inest: 3)
+var airtistTunesSpacing: CollectionViewSpacing = CollectionViewSpacing(lineSpacing: 1, inest: 3)
 
 extension AirtistTunesViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 30, bottom: 0, right: 30)
+        return UIEdgeInsets(top: 10, left: 30, bottom: 0, right: 30)
     }
     
     //상하간격
@@ -81,7 +81,7 @@ extension AirtistTunesViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width / 2 - airtistTunesSpacing.inest - 30
-        let size = CGSize(width: width - airtistTunesSpacing.inest / 2 , height: width - airtistTunesSpacing.inest / 2)
+        let size = CGSize(width: width - airtistTunesSpacing.inest / 2 , height: 200)
         return size
     }
     
