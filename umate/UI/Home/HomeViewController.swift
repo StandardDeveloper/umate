@@ -51,23 +51,16 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = homeCollectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
         
         let paragraph = NSMutableParagraphStyle()
-        paragraph.addTabStop(NSTextTab(textAlignment: .left, location: 10, options: [:]))
-        paragraph.firstLineHeadIndent = 15
-        let attrtitleLabel = NSAttributedString(string: "Title", attributes: [.paragraphStyle : paragraph])
+        paragraph.firstLineHeadIndent = 10
+        let strTitle = "Title \nname"
+        let attrtitleLabel = NSAttributedString(string: strTitle, attributes: [.paragraphStyle : paragraph])
         cell.titleLabel.attributedText = attrtitleLabel
+        
+        cell.titleLabel.numberOfLines = 2
         cell.titleLabel.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.5)
-        cell.titleLabel.layer.cornerRadius = 2
+        cell.titleLabel.layer.cornerRadius = 8
         cell.titleLabel.layer.masksToBounds = true
         cell.titleLabel.textColor = .white
-        
-        paragraph.addTabStop(NSTextTab(textAlignment: .left, location: 10, options: [:]))
-        paragraph.firstLineHeadIndent = 15
-        let attrnameLabel = NSAttributedString(string: "name", attributes: [.paragraphStyle : paragraph])
-        cell.nameLabel.attributedText = attrnameLabel
-        cell.nameLabel.backgroundColor = UIColor(red: 93/255, green: 93/255, blue: 93/255, alpha: 0.8)
-        cell.nameLabel.layer.cornerRadius = 2
-        cell.nameLabel.layer.masksToBounds = true
-        cell.nameLabel.textColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
         
         cell.collectionImageView.layer.cornerRadius = 10
         
